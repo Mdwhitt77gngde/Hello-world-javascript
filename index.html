@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Currency Converter — David Whitten</title>
+<link rel="stylesheet" href="src/css/styles.css" />
+</head>
+<body>
+<header class="site-header">
+<img src="assets/icon.svg" alt="app icon" class="logo" />
+<h1>Currency Converter</h1>
+</header>
+
+
+<main class="container">
+<section class="converter">
+<div class="row">
+<label for="amount">Amount</label>
+<input id="amount" type="number" value="1" step="any" />
+</div>
+
+
+<div class="row">
+<label for="from">From</label>
+<select id="from"></select>
+</div>
+
+
+<div class="row">
+<label for="to">To</label>
+<select id="to"></select>
+</div>
+
+
+<div class="controls">
+<button id="convertBtn">Convert</button>
+<button id="swapBtn">Swap</button>
+</div>
+
+
+<div id="result" class="result">—</div>
+<div id="change" class="change">—</div>
+<canvas id="sparkline" width="300" height="60" aria-label="7-day rate sparkline"></canvas>
+</section>
+
+
+<aside class="history">
+<h2>Conversion History</h2>
+<ul id="historyList"></ul>
+<button id="clearHistory">Clear History</button>
+</aside>
+</main>
+
+
+<footer class="site-footer">Built for learning — David Whitten</footer>
+
+
+<script type="module" src="src/js/app.js"></script>
+</body>
+</html>
